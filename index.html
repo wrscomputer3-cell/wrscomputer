@@ -100,6 +100,94 @@ style="display:inline-block;margin:10px;padding:12px 25px;background:#6f42c1;col
 style="display:inline-block;margin:10px;padding:12px 25px;background:#17a2b8;color:white;text-decoration:none;border-radius:6px;">
 📄 DigiLocker Services
 </a>
+<h2 style="text-align:center;">🏛 Central Government Job Services</h2>
+
+<div style="text-align:center;margin:20px 0;">
+
+<a href="https://ssc.nic.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#007bff;color:white;text-decoration:none;border-radius:6px;">
+🏛 SSC Jobs
+</a>
+
+<a href="https://www.rrbcdg.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#28a745;color:white;text-decoration:none;border-radius:6px;">
+🚆 Railway Jobs
+</a>
+
+<a href="https://www.upsc.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#ff5722;color:white;text-decoration:none;border-radius:6px;">
+🏛 UPSC Jobs
+</a>
+
+<a href="https://www.joinindiannavy.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#6f42c1;color:white;text-decoration:none;border-radius:6px;">
+⚓ Indian Navy Jobs
+</a>
+
+<a href="https://joinindianarmy.nic.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#17a2b8;color:white;text-decoration:none;border-radius:6px;">
+🪖 Indian Army Jobs
+</a>
+
+<a href="https://indianairforce.nic.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#ffc107;color:black;text-decoration:none;border-radius:6px;">
+✈ Indian Air Force Jobs
+</a>
+
+</div>
+<h2 style="text-align:center;">🏛 Manipur State Govt Job Services</h2>
+
+<div style="text-align:center;margin:20px 0;">
+
+<a href="https://manipur.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#007bff;color:white;text-decoration:none;border-radius:6px;">
+🏛 Manipur Govt Portal
+</a>
+
+<a href="https://mpscmanipur.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#28a745;color:white;text-decoration:none;border-radius:6px;">
+📄 MPSC Recruitment
+</a>
+
+<a href="https://manipurpolice.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#ff5722;color:white;text-decoration:none;border-radius:6px;">
+👮 Manipur Police Jobs
+</a>
+
+<a href="https://educationmanipur.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#6f42c1;color:white;text-decoration:none;border-radius:6px;">
+🎓 Education Dept Jobs
+</a>
+
+<a href="https://employmentmanipur.gov.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#17a2b8;color:white;text-decoration:none;border-radius:6px;">
+💼 Employment Exchange
+</a>
+
+<a href="https://msscmanipur.in/" target="_blank"
+style="display:inline-block;margin:10px;padding:12px 25px;background:#dc3545;color:white;text-decoration:none;border-radius:6px;">
+📄 MSSC Recruitment Portal
+</a>
+<h2 style="text-align:center;">📢 Latest Manipur Job Updates</h2>
+
+<div id="job-updates" style="max-width:700px;margin:auto;
+border:1px solid #ddd;padding:15px;border-radius:8px;background:#f9f9f9;">
+Loading latest job updates...
+</div>
+
+<script>
+fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.freejobalert.com/state-government-jobs/manipur/")
+.then(response => response.json())
+.then(data => {
+let output = "<ul>";
+data.items.slice(0,5).forEach(item => {
+output += `<li><a href="${item.link}" target="_blank">${item.title}</a></li>`;
+});
+output += "</ul>";
+document.getElementById("job-updates").innerHTML = output;
+});
+</script>
+</div>
 
 </section><section id="pricing">
 <h2>Service Price List</h2>
@@ -291,6 +379,7 @@ style="display:inline-block;padding:12px 25px;background:#28a745;color:white;fon
  
 </body>
 </html>
+
 
 
 
