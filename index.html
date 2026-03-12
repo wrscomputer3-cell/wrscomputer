@@ -95,9 +95,66 @@ footer{background:#111;color:white;text-align:center;padding:25px;margin-top:40p
 <p><strong>Aadhaar • PAN Card • Passport • Job Apply • Train Ticket • Flight Ticket • AEPS</strong></p>
 </div>
 </section><section id="services">
-<h2>Online Services</h2>
-<div id="serviceContainer" class="services"></div>
-</section><section id="banking">
+<style>
+
+.online-services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.service-card{
+background:white;
+padding:30px 20px;
+border-radius:12px;
+text-align:center;
+font-weight:bold;
+font-size:18px;
+color:#0d6efd;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+background:#0d6efd;
+color:white;
+transform:translateY(-6px);
+}
+
+.service-title{
+text-align:center;
+font-size:34px;
+font-weight:bold;
+margin-top:30px;
+margin-bottom:20px;
+}
+
+</style>
+
+
+<h2 class="service-title">💻 Online Services</h2>
+
+<div class="online-services">
+
+<div class="service-card">🪪 Aadhaar Enrollment / Correction</div>
+
+<div class="service-card">🪪 PAN Card Apply</div>
+
+<div class="service-card">🚗 Driving Licence Apply</div>
+
+<div class="service-card">🌍 Passport Apply</div>
+
+<div class="service-card">✈️ Flight Ticket Booking</div>
+
+<div class="service-card">🚆 Train Ticket Booking</div>
+
+<div class="service-card">📄 Online Job Apply</div>
+
+<div class="service-card">📑 Domicile / Income / OBC / PRC Certificates</div>
+
 </div>
 <h2>🪪 Aadhaar Online Services</h2>
 
@@ -551,6 +608,7 @@ style="display:inline-block;padding:12px 25px;background:#28a745;color:white;fon
  
 </body>
 </html>
+
 
 
 
