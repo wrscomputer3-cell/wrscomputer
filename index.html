@@ -181,14 +181,73 @@ margin-bottom:20px;
 </a>
 
 </div>
-<h2>Banking & AEPS Services</h2>
-<div class="services">
-<div class="card"><h3>SBI Account Opening</h3></div>
-<div class="card"><h3>Airtel Payments Bank</h3></div>
-<div class="card"><h3>Bank of Baroda</h3></div>
-<div class="card"><h3>AEPS Service</h3></div>
-<div class="card"><h3>Micro ATM</h3></div>
+<style>
+
+.banking-section{
+padding:40px;
+max-width:1200px;
+margin:auto;
+}
+
+.banking-title{
+text-align:center;
+font-size:32px;
+font-weight:bold;
+margin-bottom:30px;
+}
+
+.banking-services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.bank-card{
+background:white;
+padding:30px 20px;
+border-radius:12px;
+text-align:center;
+font-weight:bold;
+font-size:18px;
+color:#0d6efd;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.bank-card:hover{
+background:#0d6efd;
+color:white;
+transform:translateY(-6px);
+}
+
+</style>
+
+
+<section class="banking-section">
+
+<h2 class="banking-title">🏦 Banking & AEPS Services</h2>
+
+<div class="banking-services">
+
+<div class="bank-card">🏦 SBI Account Opening</div>
+
+<div class="bank-card">📱 Airtel Payments Bank</div>
+
+<div class="bank-card">🏦 Bank of Baroda</div>
+
+<div class="bank-card">💳 AEPS Service</div>
+
+<div class="bank-card">💵 Micro ATM</div>
+
+<div class="bank-card">📊 Balance Enquiry</div>
+
+<div class="bank-card">📄 Mini Statement</div>
+
+<div class="bank-card">💰 Cash Deposit / Withdrawal</div>
+
 </div>
+
+</section>
 <!-- SBI Customer Service Point Section -->
 
 <style>
@@ -608,6 +667,7 @@ style="display:inline-block;padding:12px 25px;background:#28a745;color:white;fon
  
 </body>
 </html>
+
 
 
 
