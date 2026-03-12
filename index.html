@@ -270,41 +270,8 @@ Loading latest government job notifications...
 </section>
 <script>
 
-<script>
 
-async function loadJobs(){
 
-const url="https://api.rss2json.com/v1/api.json?rss_url=https://www.freejobalert.com/feed/";
-
-try{
-
-const response=await fetch(url);
-const data=await response.json();
-
-let jobsHTML="<ul>";
-
-data.items.slice(0,6).forEach(job=>{
-jobsHTML+=`<li>
-<a href="${job.link}" target="_blank">${job.title}</a>
-</li>`;
-});
-
-jobsHTML+="</ul>";
-
-document.getElementById("job-updates").innerHTML=jobsHTML;
-
-}catch(error){
-
-document.getElementById("job-updates").innerHTML="Unable to load job updates.";
-
-}
-
-}
-
-loadJobs();
-
-</script>
-</script>
 <script>
 fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.freejobalert.com/state-government-jobs/manipur/")
 .then(response => response.json())
@@ -514,6 +481,7 @@ style="display:inline-block;padding:12px 25px;background:#28a745;color:white;fon
  
 </body>
 </html>
+
 
 
 
