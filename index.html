@@ -247,8 +247,56 @@ box-shadow:0 0 10px rgba(0,0,0,0.1);
 Loading latest Manipur job updates...
 
 </div>
-   
+<h2>📢 Daily Government Job Notifications</h2>
 
+<div id="govt-jobs" style="
+background:#ffffff;
+padding:20px;
+border-radius:10px;
+max-width:850px;
+margin:auto;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+font-size:16px;
+">
+
+Loading latest government job notifications...
+
+</div>
+   
+<script>
+
+async function loadGovtJobs(){
+
+const url="https://api.rss2json.com/v1/api.json?rss_url=https://www.freejobalert.com/feed/";
+
+try{
+
+const response=await fetch(url);
+const data=await response.json();
+
+let jobHTML="<ul>";
+
+data.items.slice(0,8).forEach(job=>{
+jobHTML+=`<li>
+<a href="${job.link}" target="_blank">${job.title}</a>
+</li>`;
+});
+
+jobHTML+="</ul>";
+
+document.getElementById("govt-jobs").innerHTML=jobHTML;
+
+}catch(error){
+
+document.getElementById("govt-jobs").innerHTML="Unable to load notifications.";
+
+}
+
+}
+
+loadGovtJobs();
+
+</script>
 </tbody>
 </table>
 </section>
@@ -495,6 +543,7 @@ style="display:inline-block;padding:12px 25px;background:#28a745;color:white;fon
  
 </body>
 </html>
+
 
 
 
