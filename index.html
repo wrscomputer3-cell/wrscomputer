@@ -1,528 +1,202 @@
-<!DOCTYPE html><html lang="en">
+```html
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>WRS COMPUTER | Cyber Cafe & Digital Services</title>
 
-<meta name="description" content="WRS COMPUTER Cyber Cafe provides Aadhaar services, PAN card, ticket booking, banking AEPS">
-
 <style>
-.aadhaar-services{
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f7fb;
+color:#333;
+}
+
+header{
+background:#0d6efd;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:36px;
+}
+
+nav{
+background:#111;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#0d6efd;
+}
+
+.container{
+padding:30px;
+text-align:center;
+}
+
+.services{
 display:flex;
 flex-wrap:wrap;
+justify-content:center;
 gap:15px;
 margin-top:20px;
 }
 
 .service-btn{
-background:#007bff;
+padding:14px 24px;
+background:#0d6efd;
 color:white;
-padding:12px 22px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
 }
 
 .service-btn:hover{
-background:#0056b3;
+background:#084298;
 }
-body{font-family:Arial;margin:0;background:#f5f7fb;color:#333}
 
-header{
-background:url('header.jpg');
-background-size:cover;
-background-position:center;
+.section-title{
+font-size:26px;
+margin-top:40px;
+}
+
+.job-btn{
+padding:14px 24px;
+border-radius:8px;
+text-decoration:none;
 color:white;
-padding:45px;
+font-weight:bold;
+}
+
+.blue{background:#0d6efd}
+.green{background:#198754}
+.orange{background:#fd7e14}
+.purple{background:#6f42c1}
+.red{background:#dc3545}
+.teal{background:#20c997}
+
+.jobs{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:20px;
+}
+
+footer{
+background:#111;
+color:white;
 text-align:center;
+padding:15px;
+margin-top:40px;
 }
 
-header h1{margin:0;font-size:38px}
-header p{margin-top:8px;font-size:18px}
+</style>
+</head>
 
-nav{background:#111;padding:14px;text-align:center;position:sticky;top:0}
-nav a{color:white;margin:0 14px;text-decoration:none;font-weight:bold}
-nav a:hover{color:#0b6efd}
-section{padding:60px 20px;text-align:center}
+<body>
 
-.hero{background:white;padding:40px;border-radius:14px;max-width:900px;margin:auto;box-shadow:0 6px 16px rgba(0,0,0,0.1)}
-
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;margin-top:35px}
-.card{background:white;padding:25px;border-radius:12px;box-shadow:0 6px 14px rgba(0,0,0,0.1);transition:.2s}
-.card:hover{transform:translateY(-6px)}
-.card h3{margin-top:0;color:#0b6efd}
-
-.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
-.price{background:white;padding:25px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:30px}
-.gallery div{height:140px;background:#ddd;border-radius:10px;display:flex;align-items:center;justify-content:center}
-
-.review{max-width:800px;margin:auto;background:white;padding:25px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-
-.contact-box{background:white;padding:25px;border-radius:12px;display:inline-block;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-
-form{max-width:500px;margin:25px auto}
-input,textarea{width:100%;padding:12px;margin:10px 0;border-radius:6px;border:1px solid #ccc}
-button{background:#0b6efd;color:white;padding:12px 20px;border:none;border-radius:6px;font-size:16px}
-
-.admin-button{position:fixed;bottom:20px;left:20px;background:#111;color:white;padding:12px 16px;border-radius:8px;cursor:pointer}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 20px;border-radius:50px;text-decoration:none;font-weight:bold}
-
-.admin-panel{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:white;overflow:auto;padding:30px}
-textarea{width:100%;height:200px}
-
-footer{background:#111;color:white;text-align:center;padding:25px;margin-top:40px}
-</style></head><body><header>
+<header>
 <h1>WRS COMPUTER</h1>
-<p>Cyber Cafe | Aadhaar | PAN | Ticket Booking | Banking | Online Services</p>
-</header><nav>
-<a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#banking">Banking</a>
-<a href="#student Services">student Services</a>
-<a href="#Central Govt Job">Central Govt Job</a> 
-<a href="#State Govt Job">State Govt Job</a>
-<a href="#pricing">Price</a>
-<a href="#gallery">Gallery</a>
-<a href="#reviews">Reviews</a>
-<a href="#contact">Contact</a>
-</nav><section id="home">
-<div class="hero">
-<h2>Welcome to WRS COMPUTER</h2>
-<p>Your trusted digital service center for government services, online applications and banking.</p>
-<p><strong>Aadhaar • PAN Card • Passport • Job Apply • Train Ticket • Flight Ticket • AEPS</strong></p>
-</div>
-</section><section id="services">
-<h2>Online Services</h2>
-<div id="serviceContainer" class="services"></div>
-</section><section id="banking">
-</div>
-<h2>🪪 Aadhaar Online Services</h2>
+<p>Cyber Cafe & Digital Services</p>
+</header>
 
-<div class="aadhaar-services">
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Jobs</a>
+<a href="#">Contact</a>
+</nav>
 
-<a href="https://myaadhaar.uidai.gov.in/genricDownloadAadhaar" target="_blank" class="service-btn">
-⬇ Aadhaar Card Download
-</a>
+<div class="container">
 
-<a href="https://myaadhaar.uidai.gov.in/check-aadhaar" target="_blank" class="service-btn">
-🔍 Check Aadhaar Status
-</a>
+<h2 class="section-title">Online Document Services</h2>
 
-<a href="https://myaadhaar.uidai.gov.in/update-aadhaar" target="_blank" class="service-btn">
-✏ Update Aadhaar Details
-</a>
-
-<a href="https://appointments.uidai.gov.in/" target="_blank" class="service-btn">
-📅 Book Aadhaar Appointment
-</a>
-
-<a href="https://myaadhaar.uidai.gov.in/retrieve-eid-uid" target="_blank" class="service-btn">
-🔑 Retrieve Lost Aadhaar Number
-</a>
-
-</div>
-<h2>Banking & AEPS Services</h2>
 <div class="services">
-<div class="card"><h3>SBI Account Opening</h3></div>
-<div class="card"><h3>Airtel Payments Bank</h3></div>
-<div class="card"><h3>Bank of Baroda</h3></div>
-<div class="card"><h3>AEPS Service</h3></div>
-<div class="card"><h3>Micro ATM</h3></div>
-</div>
-<h2 style="text-align:center;">🎓 Student Services</h2>
 
-<div style="text-align:center;margin:20px 0;">
+<a href="https://myaadhaar.uidai.gov.in/genricDownloadAadhaar" target="_blank" class="service-btn">Aadhaar Download</a>
 
-<a href="https://neet.nta.nic.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#ff5722;color:white;text-decoration:none;border-radius:6px;">
-🎓 NEET UG Registration
-</a>
+<a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank" class="service-btn">PAN Card Apply</a>
 
-<a href="https://jeemain.nta.nic.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#007bff;color:white;text-decoration:none;border-radius:6px;">
-🎓 JEE Main Registration
-</a>
+<a href="https://voters.eci.gov.in/" target="_blank" class="service-btn">Voter Card Apply</a>
 
-<a href="https://exams.nta.nic.in/cuet-pg/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#28a745;color:white;text-decoration:none;border-radius:6px;">
-🎓 CUET Registration
-</a>
+<a href="#" class="service-btn">Income Certificate</a>
 
-<a href="https://scholarships.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#6f42c1;color:white;text-decoration:none;border-radius:6px;">
-🎓 National Scholarship
-</a>
+<a href="#" class="service-btn">OBC Certificate</a>
 
-<a href="https://www.digilocker.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#17a2b8;color:white;text-decoration:none;border-radius:6px;">
-📄 DigiLocker Services
-</a>
-<h2 style="text-align:center;">🏛 Central Government Job Services</h2>
-
-<div style="text-align:center;margin:20px 0;">
-
-<a href="https://ssc.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#007bff;color:white;text-decoration:none;border-radius:6px;">
-🏛 SSC Jobs
-</a>
-
-<a href="https://www.rrbapply.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#28a745;color:white;text-decoration:none;border-radius:6px;">
-🚆 Railway Jobs
-</a>
-
-<a href="https://www.upsc.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#ff5722;color:white;text-decoration:none;border-radius:6px;">
-🏛 UPSC Jobs
-</a>
-
-<a href="https://www.joinindiannavy.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#6f42c1;color:white;text-decoration:none;border-radius:6px;">
-⚓ Indian Navy Jobs
-</a>
-
-<a href="https://joinindianarmy.nic.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#17a2b8;color:white;text-decoration:none;border-radius:6px;">
-🪖 Indian Army Jobs
-</a>
-
-<a href="https://indianairforce.nic.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#ffc107;color:black;text-decoration:none;border-radius:6px;">
-✈ Indian Air Force Jobs
-</a>
+<a href="#" class="service-btn">Domicile Certificate</a>
 
 </div>
-<h2 style="text-align:center;">🏛 Manipur State Govt Job Services</h2>
 
-<div style="text-align:center;margin:20px 0;">
 
-<a href="https://manipur.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#007bff;color:white;text-decoration:none;border-radius:6px;">
-🏛 Manipur Govt Portal
-</a>
+<h2 class="section-title">Central Government Job Services</h2>
 
-<a href="https://mpscmanipur.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#28a745;color:white;text-decoration:none;border-radius:6px;">
-📄 MPSC Recruitment
-</a>
+<div class="jobs">
 
-<a href="https://manipurpolice.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#ff5722;color:white;text-decoration:none;border-radius:6px;">
-👮 Manipur Police Jobs
-</a>
+<a href="https://ssc.nic.in/" target="_blank" class="job-btn blue">SSC Jobs</a>
 
-<a href="https://manipureducation.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#6f42c1;color:white;text-decoration:none;border-radius:6px;">
-🎓 Education Dept Jobs
-</a>
+<a href="https://indianrailways.gov.in/" target="_blank" class="job-btn green">Railway Jobs</a>
 
-<a href="https://employmentmanipur.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#17a2b8;color:white;text-decoration:none;border-radius:6px;">
-💼 Employment Exchange
-</a>
+<a href="https://upsc.gov.in/" target="_blank" class="job-btn orange">UPSC Jobs</a>
 
-<a href="https://manipurssc.mn.gov.in/" target="_blank"
-style="display:inline-block;margin:10px;padding:12px 25px;background:#dc3545;color:white;text-decoration:none;border-radius:6px;">
-📄 MSSC Recruitment Portal
-</a>
-    
-<a href="https://www.excisemanipur.com/" target="_blank" 
-style="display:inline-block;margin:10px;padding:12px 25px;background:#ff5722;color:white;text-decoration:none;border-radius:6px;">
-🏛 Excise Manipur Portal
-</a>
-   
-<h2 style="text-align:center;">📢 Latest Manipur Job Updates</h2>
+<a href="https://www.joinindiannavy.gov.in/" target="_blank" class="job-btn purple">Indian Navy</a>
 
-<div id="job-updates" style="max-width:700px;margin:auto;
-border:1px solid #ddd;padding:15px;border-radius:8px;background:#f9f9f9;">
-Loading latest job updates...
-</div>
+<a href="https://joinindianarmy.nic.in/" target="_blank" class="job-btn teal">Indian Army</a>
 
-<table class="job-table">
-<thead>
-<tr>
-<th>Date</th>
-<th>Department</th>
-<th>Post Name</th>
-<th>Details</th>
-<th>Last Date</th>
-<th>PDF</th>
-</tr>
-</thead>
-
-<tbody>
-
-<tr>
-<td>10 Mar 2026</td>
-<td>Manipur Police</td>
-<td>Constable Recruitment</td>
-<td>50 Posts</td>
-<td style="color:red;">25 Mar 2026</td>
-<td><a href="pdf/manipur-police.pdf" download>Download</a></td>
-</tr>
-
-<tr>
-<td>08 Mar 2026</td>
-<td>Education Dept</td>
-<td>Teacher Vacancy</td>
-<td>30 Posts</td>
-<td style="color:red;">20 Mar 2026</td>
-<td><a href="pdf/teacher-job.pdf" download>Download</a></td>
-</tr>
-
-<tr>
-<td>05 Mar 2026</td>
-<td>Health Dept</td>
-<td>Nurse Recruitment</td>
-<td>20 Posts</td>
-<td style="color:red;">18 Mar 2026</td>
-<td><a href="pdf/nurse-job.pdf" download>Download</a></td>
-</tr>
-
-</tbody>
-</table>
-</section>
-<script>
-fetch("https://api.rss2json.com/v1/api.json?rss_url=https://www.freejobalert.com/state-government-jobs/manipur/")
-.then(response => response.json())
-.then(data => {
-let output = "<ul>";
-data.items.slice(0,5).forEach(item => {
-output += `<li><a href="${item.link}" target="_blank">${item.title}</a></li>`;
-});
-output += "</ul>";
-document.getElementById("job-updates").innerHTML = output;
-});
-</script>
-</div>
-
-</section><section id="pricing">
-<h2>Service Price List</h2>
-<div class="pricing">
-<div class="price"><h3>Print</h3><p>B/W ₹5</p><p>Colour ₹10</p></div>
-<div class="price"><h3>Scanning</h3><p>Document ₹10</p></div>
-<div class="price"><h3>Online Form</h3><p>₹100 - ₹300</p></div>
-<div class="price"><h3>Ticket Booking</h3><p>Train 5-10% Discount </p><p>Flight ₹200 - ₹500 discount </p></div>
-</div>
-</section><section id="gallery">
-<h2>Our Cyber Cafe</h2>
-<div class="gallery">
-<div class="card">
-<img src="SHOP.jpg" alt="WRS Computer Shop"
-style="width:100%;height:200px;object-fit:cover;border-radius:10px;">
-<p>WRS Computer Shop</p>
-</div>
-<div class="card">
-<img src="COMPUTER SETUP.jpg" alt="Computer Setup"
-style="width:100%;height:200px;object-fit:cover;border-radius:10px;">
-<p>omputer Setup</p>
-</div>
-<div class="card">
-<img src="CUSTOMER SERVICE.jpg" alt="Customer Service"
-style="width:100%;height:200px;object-fit:cover;border-radius:10px;">
-<p>Customer Service</p>
-</div>
-<div class="card">
-<img src="PRINTING.jpg" alt="Printing Works Within Minutes"
-style="width:100%;height:200px;object-fit:cover;border-radius:10px;">
-<p>Printing Works Within Minustes</p>
-</div>
-</div>
-</section><section id="reviews">
-<h2>Customer Reviews</h2>
-<div class="review">
-<p>⭐ ⭐ ⭐ ⭐ ⭐</p>
-<p>Very good service for Aadhaar and job applications.</p>
-<p><strong>- Local Customer</strong></p>
-</div>
-</section><section id="contact">
-<h2>Contact</h2>
-<div class="contact-box">
-<p><strong>Shop:</strong> WRS COMPUTER</p>
-<p><strong>Phone:</strong> +91 8787323300</p>
-<p><strong>Open:</strong> 8:00 AM – 9:00 PM</p>
-<p><strong>Location:</strong> Hatta Mana Ingkhol, MHGAU Club Complex, Imphal East, Manipur - 79005</p>
-</div><h3>Send Message</h3>
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Mobile Number" required>
-<textarea placeholder="Your message"></textarea>
-<button type="submit">Send</button>
-</form><iframe src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300"></iframe>
-</section><a class="whatsapp" href="https://wa.me/918787323300">WhatsApp</a>
-
-<div class="admin-button" onclick="openAdmin()">Admin</div><div class="admin-panel" id="adminPanel">
-<h2>Admin Panel</h2>
-<p>Edit services (one per line)</p>
-<textarea id="serviceEditor"></textarea>
-<br><br>
-<button onclick="saveServices()">Save</button>
-<button onclick="closeAdmin()">Close</button>
-</div><footer>
-<p>© 2026 WRS COMPUTER | Cyber Cafe & Digital Common Service Centre</p>
-</footer><script>
-
-let defaultServices=[
-"Aadhaar Enrollment / Correction",
-"PAN Card Apply",
-"Driving Licence Apply",
-"Passport Apply",
-"Flight Ticket Booking",
-"Train Ticket Booking",
-"Online Job Apply",
-"Domicile / Income / OBC / PRC Certificates etc"
-];
-
-function loadServices(){
-let saved=localStorage.getItem("services");
-let services=saved?JSON.parse(saved):defaultServices;
-let container=document.getElementById("serviceContainer");
-container.innerHTML="";
-services.forEach(s=>{
-let div=document.createElement("div");
-div.className="card";
-div.innerHTML="<h3>"+s+"</h3>";
-container.appendChild(div);
-});
-}
-
-function openAdmin(){
-let panel=document.getElementById("adminPanel");
-panel.style.display="block";
-let saved=localStorage.getItem("services");
-let services=saved?JSON.parse(saved):defaultServices;
-document.getElementById("serviceEditor").value=services.join("\n");
-}
-
-function closeAdmin(){
-document.getElementById("adminPanel").style.display="none";
-}
-
-function saveServices(){
-let text=document.getElementById("serviceEditor").value;
-let services=text.split("\n");
-localStorage.setItem("services",JSON.stringify(services));
-loadServices();
-alert("Services Updated");
-}
-
-loadServices();
-
-</script><a href="https://wa.me/+918787323300" 
-   class="whatsapp-float" 
-   target="_blank">
-   💬 Chat on WhatsApp
-</a>
-
-<style>
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:12px 18px;
-border-radius:30px;
-font-size:16px;
-text-decoration:none;
-box-shadow:0 4px 6px rgba(0,0,0,0.2);
-z-index:1000;
-}
-
-.whatsapp-float:hover{
-background:#1ebe5d;
-}
-</style>
-<!-- Call Button 1 -->
-<a href="tel:+918787323300" class="call-float1">
-📞 Call 1
-</a>
-
-<!-- Call Button 2 -->
-<a href="tel:+919362323506" class="call-float2">
-📞 Call 2
-</a>
-
-<style>
-.call-float1{
-position:fixed;
-bottom:80px;
-right:20px;
-background:#007bff;
-color:white;
-padding:12px 18px;
-border-radius:30px;
-font-size:16px;
-text-decoration:none;
-box-shadow:0 4px 6px rgba(0,0,0,0.2);
-z-index:1000;
-}
-
-.call-float2{
-position:fixed;
-bottom:140px;
-right:20px;
-background:#28a745;
-color:white;
-padding:12px 18px;
-border-radius:30px;
-font-size:16px;
-text-decoration:none;
-box-shadow:0 4px 6px rgba(0,0,0,0.2);
-z-index:1000;
-}
-</style>
-    
-</script>
+<a href="https://indianairforce.nic.in/" target="_blank" class="job-btn red">Air Force</a>
 
 </div>
-<h2>📝 Online Service Form</h2>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSeXGmg6vs5jIILXPqd9OgHt9fN0r8ve4-IF-2bQrhfYjnLP_Q/viewform"
-target="_blank"
-style="display:inline-block;padding:12px 25px;background:#28a745;color:white;font-size:18px;text-decoration:none;border-radius:6px;">
-📝 Apply Online
-</a>
 
 
-<h2>📍 Our Location</h2>
+<h2 class="section-title">Manipur State Govt Job Services</h2>
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29723.224011602524!2d93.95970238219952!3d24.82165071605511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3749271d1592871d%3A0x56f0d155599978d8!2sWRS%20COMPUTER%2C%20Aadhaar%20Enrollment%20Centre%20%26%20Onlice%20Services!5e0!3m2!1sen!2sin!4v1773082674470!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- 
+<div class="jobs">
+
+<a href="https://manipur.gov.in/" target="_blank" class="job-btn blue">Manipur Portal</a>
+
+<a href="https://mpscmanipur.gov.in/" target="_blank" class="job-btn green">MPSC Recruitment</a>
+
+<a href="#" class="job-btn orange">Manipur Police Jobs</a>
+
+<a href="#" class="job-btn purple">Education Dept Jobs</a>
+
+<a href="#" class="job-btn teal">Employment Exchange</a>
+
+<a href="#" class="job-btn red">MSSC Recruitment</a>
+
+</div>
+
+
+<h2 class="section-title">Latest Manipur Job Updates</h2>
+
+<p>Loading latest job updates...</p>
+
+</div>
+
+<footer>
+
+<p>© 2026 WRS COMPUTER Cyber Cafe | All Services Available</p>
+
+</footer>
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
